@@ -1,0 +1,493 @@
+@font-face {
+    font-family: titulos;
+    src: url(../fuentes/Italigia.ttf);
+}
+@font-face {
+    font-family: texto-normal;
+    src: url(../fuentes/BebasNeue-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+div, section{
+    display: flex;
+    
+}
+h1, h2, h3{
+    font-family: titulos;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    justify-self: center;
+    justify-content: center;
+    background-color: #eedfca;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-family: texto-normal;
+    font-size: 25px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-family: texto-normal;
+    font-size: 20px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    
+}
+nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Cuerpo*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../img/plants.png);
+    background-position: bottom;
+    background-size: cover;
+    
+
+}
+main div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+}
+main h1 {
+    font-size: 85px;
+    color:#ea7846 ;
+}
+
+
+/*Seccion 2*/
+.presentacion{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion img{
+    width: 300px;
+}
+.saludo{
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.saludo h3{
+    font-size: 50px;
+    color:#ea7846 ;
+    margin: 1px;
+}
+.saludo p{
+    font-size: 30px;
+}
+.trabajos-seleccionados{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: #f9b65e;
+}
+.trabajos-seleccionados span{
+    font-family: titulos;
+    font-size: 150px;
+    color: #ea7846;
+    text-align: center;
+}
+
+/*----------------------------------*/
+.icon-container{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    
+}
+.icon{
+    
+    margin-right: 200px;
+    flex-shrink: 0;
+    animation: moveLeft 10s linear infinite;
+   
+}
+.icon img{
+    width: 70px;
+}
+
+@keyframes moveLeft {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+/*---------------------------------*/
+.tbc{
+    width: 100%;
+    height: 832px;
+    background-image: url(../img/tbc.png);
+    background-position:right;
+    background-repeat: no-repeat;
+}
+.tbc div{
+    margin: 10%;
+    flex-direction: column;
+    width: 35%;
+    word-wrap: break-word;
+    text-align: center;
+}
+.tbc h2{
+    font-size: 60px;
+    color: #ea7846;
+    text-align: center;
+}
+
+/*--------------------------------------*/
+.tatuajes{
+    width: 100%;
+    height: 832px;
+    background-image: url(../img/tatuaje.png);
+    background-position:right;
+    background-repeat: no-repeat;
+    background-color: #f9b65e;
+}
+.tatuajes div{
+    margin: 5%;
+    flex-direction: column;
+    width: 35%;
+    word-wrap: break-word;
+    text-align: center;
+}
+.tatuajes h2{
+    font-size: 60px;
+    color: #ea7846;
+    text-align: center;
+}
+/*---------------------*/
+.sehh{
+    width: 100%;
+    height: 832px;
+    flex-direction: row;
+}
+.sehh h2, .sehh20 h2{
+    font-size: 60px;
+    color: #ea7846;
+    text-align: center;
+}
+
+.hemo-explicacion{
+    margin: 5%;
+    flex-direction: column;
+    width: 35%;
+    word-wrap: break-word;
+    text-align: center;
+   
+}
+/*-------------------*/
+.sehh20{
+    width: 100%;
+    height: 832px;
+    flex-direction: row;
+    background-color: #f9b65e;
+}
+.hemo-video{
+    width: 30%;
+    justify-content: center;
+    background-image: url(../img/mancha.png);
+    background-size:104%;
+    background-repeat: no-repeat;
+}
+video{
+    width: 320px;
+}
+.video-explicacion{
+    margin: 5%;
+    flex-direction: column;
+    width: 50%;
+    word-wrap: break-word;
+    text-align: center;
+   
+}
+.fotoysaludo{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.fotoysaludo img{
+    width: 500px;
+}
+
+.fotoysaludo h2{
+    color: #ea7846;
+    font-size: 50px;
+}
+.fotoysaludo a{
+    color: #ea7846;
+}
+
+.contacto{
+    width: 100%;
+   flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: texto-normal;
+    background-color: #f9b65e;
+    font-size: 30px;
+}
+.formas-de-contacto{
+    width: 50%;
+    word-wrap: break-word;
+    flex-direction: column;
+    
+}
+.curriculum{
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chiquito{
+    width: 300px;
+    justify-self: center;
+}
+.ampliable{
+    width: 300px;
+    cursor: pointer;
+
+}
+#fullscreen-container{
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+#fullscreen-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.boton{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: #ea7846;
+    border: solid thin transparent;
+    border-radius: 20px;
+  
+    
+}
+
+button a{
+    font-family: texto-normal;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    header {
+        
+        height: auto;
+        padding: 10px;
+    }
+
+    nav {
+        width: 50%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .presentacion .saludo {
+        width: 50%;
+    }
+
+ 
+
+    .icon img {
+        width: 60px;
+    }
+
+    .trabajos-seleccionados{
+        height: 500px;
+        margin-top: 10px;
+    }
+    .trabajos-seleccionados span{
+        font-size: 100px;
+    }
+    .tbc{
+        height: 600px;
+        background-size: 100%;
+    }
+    .tbc div{
+        width: 25%;
+        position: relative;
+        bottom: 70px;
+        right: 40px ;
+    }
+    .tbc h2, .tatuajes h2, .sehh h2, .sehh20 h2{
+        font-size: 36px;
+    }
+    .tbc p, .tatuajes p, .sehh p, .sehh20 p{
+        font-size: 22px;
+    }
+   .tatuajes{
+    height: 600px;
+    background-size: 60%;
+   }
+
+   .sehh, .sehh20{
+    height: 600px;
+   }
+   video{
+    width: 220px;
+   }
+   .hemo-video{
+    width: 41%;
+   }
+
+
+    .fotoysaludo img {
+        width: 300px;
+    }
+
+    .contacto {
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .formas-de-contacto,
+    .curriculum {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 80px;
+        height: 35px;
+    }
+
+    button a {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    nav{
+        width: 40%;
+        flex-direction: column;
+        justify-content: right;
+        text-align: right;
+    }
+    main{
+        height: 350px;
+    }
+
+    main h1{
+        font-size: 50px;
+    }
+    .presentacion, .trabajos-seleccionados, .tbc{
+        height: 200px;
+    }
+    .saludo h3{
+        font-size: 35px;
+    }
+    .saludo p{
+        font-size: 18px;
+    }
+    .trabajos-seleccionados span{
+        font-size: 40px;
+    }
+    .tbc{
+        background-size: 74%;
+    }
+    .tbc div{
+        width: 47%;
+        bottom: 44px;
+    }
+    .tbc h2, .tatuajes h2, .sehh h2, .sehh20 h2{
+        font-size: 22px;
+    }
+    .tbc p, .tatuajes p, .sehh p, .sehh20 p{
+        font-size: 13px;
+        position: relative;
+        bottom: 32px;
+    }
+    .tatuajes, .sehh{
+        height: 320px;
+    }
+    .hemo-explicacion{
+        width: 40%;
+    }
+    .sehh img{
+        opacity: .5;
+    }
+    .sehh20{
+        height: 400px;
+    }
+    video{
+        width: 150px;
+    }
+    .hemo-video{
+        background-position: bottom;
+        background-size: 200%;
+    }
+    #sobre-mi{
+        height: 400px;
+    }
+    .fotoysaludo img{
+        width: 170px;
+    }
+    .fotoysaludo h2{
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+    }
+    .fotoysaludo p{
+        font-size: 16px;
+    }
+}

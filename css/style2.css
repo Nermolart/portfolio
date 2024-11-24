@@ -1,0 +1,704 @@
+
+
+@font-face {
+    font-family: titulos;
+    src: url(../fuentes/Italigia.ttf);
+}
+@font-face {
+    font-family: texto-normal;
+    src: url(../fuentes/BebasNeue-Regular.ttf);
+}
+@media (min-width: 320px) {
+html{
+    scroll-behavior: smooth;
+}
+div, section{
+    display: flex;
+    border: solid thin black;
+    
+}
+h1, h2, h3{
+    font-family: titulos;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    justify-self: center;
+    justify-content: center;
+    background-color: #eedfca;
+    overflow: scroll;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-family: texto-normal;
+    
+}
+
+/*----- HEADER --------*/
+
+header{
+    width: 100%;
+    height: 80px;
+    border: solid thin black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.menu{
+    width: 25%;
+    position: fixed;
+    height: 200vh;
+    background-color: #ea7846;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
+    padding-top: 220px;
+    z-index: 999;
+    left: -101%;
+    justify-content: center;
+    align-items: center;
+}
+.close-icon {
+    align-self: flex-end;
+    padding: 10px;
+    font-size: 40px;
+    color: black;
+    display: none;
+
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    padding: 10px;
+}
+.menu.show{
+    left: 0; /*mostrar menu*/
+}
+
+.menu.show .close-icon {
+    display: block;/* Mostrar el ícono de cierre solo cuando el menú esté visible */
+}
+.menu.show ~ .menu-icon{
+    display: none; /* Ocultar el ícono de menú hamburguesa cuando el menú esté visible */
+}
+
+
+header a{
+    font-family: texto-normal;
+    font-size: 30px;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+/*----------MAIN SECTION--------*/
+main{
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/plants.png);
+    background-size: cover;
+}
+main div{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    font-size: 2rem;
+    color:#ea7846 ;
+}
+/*------SECTION 2-------*/
+.presentacion{
+    flex-direction: column;
+}
+.saludo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.saludo h3{
+    color: #ea7846;
+    font-size: 1.5rem;
+    margin: 0px 3px;
+}
+.saludo p{
+    text-align: center;
+}
+/*------CARROUSEL-----*/
+.icon-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    
+}
+.icon{
+    
+    margin-right: 70px;
+    flex-shrink: 0;
+   
+   
+}
+.icon img{
+    width: 70px;
+}
+
+@keyframes moveLeft {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.icon-container{
+    width: 400%;
+    animation: moveLeft 15s linear infinite;
+}
+
+/*------SECTION 3--------------*/
+.trabajos-seleccionados{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #f9b65e;
+}
+.trabajos-seleccionados span{
+    font-family: titulos;
+    font-size: 2rem;
+    color: #ea7846;
+    text-align: center;
+}
+/*-----------SECTION 4--------------*/
+.tbc{
+    position: relative;
+    width: 100%;
+    height: 56vh;
+    background-image: url(../img/tbc.png);
+    background-position:top;
+    background-size:120%;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+.buttontbc {
+    background-color: #ea7846;
+    border-radius: 100px;
+    position: absolute;
+    top: 10% ;
+    left: 20%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+    width: 80px;
+    height: 80px;
+    border: solid thin transparent;
+}
+.buttontbc a, .buttontatu a{
+    font-family: texto-normal;
+    font-size: 18px;
+    color: white;
+}
+
+.tbc div{
+    flex-direction: column;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+.tbc h2{
+    font-size: 1.5rem;
+    color: #ea7846;
+    text-align: center;
+    margin-bottom: 0;
+}
+.tbc p{
+    margin: 0;
+}
+
+/*-----------SECTION 5------------------*/
+.tatuajes{
+    width: 100%;
+    height: 65vh;
+    background-image: url(../img/tatuaje.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #f9b65e;
+    background-size: 100%;
+}
+.tatuajes div{
+    flex-direction: column;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+.tatuajes h2{
+    font-size: 1.5rem;
+    color: #ea7846;
+    text-align: center;
+    margin-bottom: 0;
+}
+.buttontatu{
+    align-self: center;
+    background-color: #ea7846;
+    border: solid thin transparent;
+    border-radius: 20px;
+    height: 40px;
+}
+/*------------SECTION 6-----------*/
+.sehh{
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+.sehh div img{
+    width: 100%;
+    position: relative;
+    bottom: 20%;
+}
+.sehh h2, .sehh20 h2{
+    font-size: 2rem;
+    color: #ea7846;
+    text-align: center;
+    margin: 0;
+}
+
+.hemo-explicacion{
+    position: relative;
+    bottom: 20%;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 3%;
+}
+.botones-sehh{
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.botones-sehh button{
+    background-color: #ea7846;
+    font-family: texto-normal;
+    height: 25px;
+    border: solid thin transparent;
+    border-radius: 20px;
+}
+
+.botones-sehh button a{
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+
+/*-------------SECTION 7---------*/
+.sehh20{
+    width: 100%;
+    flex-direction: column;
+    background-color: #f9b65e;
+    background-image: none;
+}
+
+.video-explicacion{
+    flex-direction: column;
+    margin: 3%;
+}
+.hemo-video{
+    background-color: black;
+    border: solid thin transparent;
+    border-radius: 20px;
+    width: 90%;
+    align-self: center;
+}
+
+video{
+    width: 90%;
+    margin: 0;
+    position: relative;
+    left: 5%;
+    margin: 2% 0px;
+
+}
+.sehh20 button{
+    background-color: #ea7846;
+    font-family: texto-normal;
+    height: 25px;
+    border: solid thin transparent;
+    border-radius: 20px;
+    margin: 10px;
+}
+.sehh20 button a{
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+
+/*---------------SECTION 8---------------*/
+#sobre-mi{
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fotoysaludo{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.fotoysaludo img{
+    width: 100%;
+}
+.fotoysaludo h2{
+    font-size: 1.5rem;
+    color: #ea7846;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/*--------------SECTION 9----------*/
+.contacto{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: texto-normal;
+    background-color: #f9b65e;
+    font-size: 30px;
+}
+.formas-de-contacto{
+    width: 100%;
+    word-wrap: break-word;
+    flex-direction: column;
+    font-size: 1.5rem;
+    
+}
+.curriculum{
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chiquito{
+    width: 300px;
+    justify-self: center;
+}
+
+.ampliable{
+    width: 100%;
+    cursor: pointer;
+
+}
+#fullscreen-container{
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+#fullscreen-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/*--------FOOTER---------*/
+.boton{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: #ea7846;
+    border: solid thin transparent;
+    border-radius: 20px;
+  
+    
+}
+
+button a{
+    font-family: texto-normal;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+}
+
+/*------TABLET----------*/
+@media (min-width: 768px) {
+.menu-bars{
+    display: none;
+}
+.menu-desktop{
+    display: flex;
+    width: 50%;
+}
+header nav a{
+    margin-left: 7%;
+}
+
+/*-----------SECTION 1----------*/
+main{
+    height: 70vh;
+    background-position: bottom;
+}
+
+main h1{
+    font-size: 3rem;
+    
+}
+
+/*-----------SECTION 2----------*/
+.saludo{
+    height: 30vh;
+}
+
+.saludo h3{
+    font-size: 2rem;
+}
+.saludo p{
+    font-size: 1.5rem;
+}
+
+.icon-container{
+    width: 400%;
+    animation: moveLeft 20s linear infinite;
+}
+ 
+/*-----------SECTION 1----------*/
+.trabajos-seleccionados span {
+    font-size: 3rem;
+}
+
+.tbc, .tatuajes, .sehh{
+    height: 70vh;
+}
+.tbc p, .tatuajes p, .sehh p, .sehh20 p{
+    font-size: 1.5rem;
+}
+.buttontbc{
+    width: 100px;
+    height: 100px;
+}
+.buttontbc a{
+    font-size: 23px;
+}
+.tatuajes h2, .tbc h2, .sehh h2, .sehh20 h2, .fotoysaludo h2{
+    font-size: 2rem;
+}
+.tatuajes button{
+    width: 120px;
+    height: 80px;
+}
+.tatuajes button a, .sehh button a, .sehh20 button a{
+    font-size: 1.5rem;
+}
+.sehh{
+    height: 80vh;
+}
+
+.hemo-explicacion p{
+    position: relative;
+    bottom: 70px;
+}
+.botones-sehh  {
+    position: relative;
+    bottom: 245px;
+}
+.botones-sehh button, .sehh20 button{
+   height: 60px; 
+   width: 160px;
+   
+}
+.botones-sehh button a{
+    margin: 0;
+}
+video{
+    width: 70%;
+    left: 15%;
+}
+.sehh20 button{
+    margin: 5% 42%;
+}
+.fotoysaludo p{
+    font-size: 1.5rem;
+}
+.curriculum{
+    margin-bottom: 5%;
+
+}
+
+}
+
+
+/*------------DESKTOP 1280------------*/
+@media (min-width: 1280px) {
+    .menu-bars{
+        display: none;
+    }
+    .menu-desktop{
+        display: flex;
+        width: 30%;
+    }
+    header nav a{
+        margin-left: 7%;
+    }
+    /*-----------SECTION 1----------*/
+main{
+    height: 70vh;
+    background-position: bottom;
+}
+
+main h1{
+    font-size: 4rem;
+    
+}
+
+/*-----------SECTION 2----------*/
+.saludo{
+    height: 30vh;
+}
+
+.saludo h3{
+    font-size: 3rem;
+}
+.saludo p{
+    font-size: 2rem;
+}
+
+.icon-container{
+    width: 300%;
+    animation: moveLeft 20s linear infinite;
+}
+.icon img{
+    width: 100px;
+}
+ 
+/*-----------SECTION 3----------*/
+.trabajos-seleccionados span {
+    font-size: 4rem;
+}
+.tbc{
+    align-items: flex-start;
+    height: 70vh;
+}
+.tbc div{
+    width: 30%;
+}
+.tatuajes{
+    height: 105vh;
+}
+
+.tbc p, .tatuajes p, .sehh p, .sehh20 p{
+    font-size: 2rem;
+}
+.buttontbc{
+    width: 150px;
+    height: 150px;
+    top: 75%;
+    left: 15%;
+}
+.buttontbc a{
+    font-size: 30px;
+}
+.tatuajes h2, .tbc h2, .sehh h2, .sehh20 h2, .fotoysaludo h2{
+    font-size: 3rem;
+}
+.tatuajes button{
+    width: 210px;
+    height: 80px;
+    
+}
+.tatuajes button a, .sehh button a, .sehh20 button a{
+    font-size: 2rem;
+}
+.sehh{
+    height: 60vh;
+    
+}
+.sehh div img{
+    width: 60%;
+}
+
+.hemo-explicacion p{
+    position: relative;
+    bottom: 130%;
+    width: 41%;
+    left: 60%;
+  }
+
+.botones-sehh  {
+    position: relative;
+    bottom: 122%;
+}
+.botones-sehh button, .sehh20 button{
+   height: 60px; 
+   width: 235px;
+   
+}
+.botones-sehh button a{
+    margin: 0;
+}
+.hemo-video {
+    width: 23%;
+    margin: 5% 7%;
+    align-self: flex-start;
+  }
+video{
+    width: 100%;
+    left: 0%;
+}
+.sehh20{
+    background-image: url(../img/sehh20fondo.png);
+    background-size: 90%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 119vh;
+}
+.sehh20 button{
+    margin: -3% 42%;
+}
+.fotoysaludo p{
+    font-size: 1.5rem;
+}
+.curriculum{
+    margin-bottom: 5%;
+
+}
+}

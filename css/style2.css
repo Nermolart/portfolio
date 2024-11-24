@@ -659,7 +659,7 @@ main h1{
 
 .hemo-explicacion p{
     position: relative;
-    bottom: 400%;
+    bottom: 100%;
     width: 41%;
     left: 60%;
   }

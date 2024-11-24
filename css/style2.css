@@ -14,7 +14,7 @@ html{
 }
 div, section{
     display: flex;
-    border: solid thin black;
+   
     
 }
 h1, h2, h3{
@@ -28,6 +28,7 @@ body{
     justify-content: center;
     background-color: #eedfca;
     overflow: scroll;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -43,7 +44,6 @@ p{
 header{
     width: 100%;
     height: 80px;
-    border: solid thin black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -623,6 +623,7 @@ main h1{
 }
 .tatuajes{
     height: 105vh;
+    background-size: 60%;
 }
 
 .tbc p, .tatuajes p, .sehh p, .sehh20 p{
@@ -631,7 +632,7 @@ main h1{
 .buttontbc{
     width: 150px;
     height: 150px;
-    top: 75%;
+    top: 77%;
     left: 15%;
 }
 .buttontbc a{
@@ -649,7 +650,7 @@ main h1{
     font-size: 2rem;
 }
 .sehh{
-    height: 60vh;
+    height: 75vh;
     
 }
 .sehh div img{
@@ -658,14 +659,14 @@ main h1{
 
 .hemo-explicacion p{
     position: relative;
-    bottom: 130%;
+    bottom: 400%;
     width: 41%;
     left: 60%;
   }
 
 .botones-sehh  {
     position: relative;
-    bottom: 122%;
+    bottom: 96%;
 }
 .botones-sehh button, .sehh20 button{
    height: 60px; 
@@ -677,26 +678,26 @@ main h1{
 }
 .hemo-video {
     width: 23%;
-    margin: 5% 7%;
-    align-self: flex-start;
+    align-self: center;
   }
 video{
     width: 100%;
     left: 0%;
 }
 .sehh20{
-    background-image: url(../img/sehh20fondo.png);
-    background-size: 90%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 119vh;
+    
+    height: 130vh;
 }
 .sehh20 button{
-    margin: -3% 42%;
+    margin:auto;
 }
 .fotoysaludo p{
     font-size: 1.5rem;
 }
+.fotoysaludo img {
+    width: 50%;
+    align-self: center;
+  }
 .curriculum{
     margin-bottom: 5%;
 

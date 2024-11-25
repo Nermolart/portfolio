@@ -650,23 +650,27 @@ main h1{
     font-size: 2rem;
 }
 .sehh{
-    height: 75vh;
+    height: 112vh;
+    background-image: url(../img/pc-sehh.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
     
 }
+.hemo-explicacion{
+    bottom: 0;
+}
 .sehh div img{
-    width: 60%;
+    display: none;
 }
 
-.hemo-explicacion p{
-    position: relative;
-    bottom: 150%;
-    width: 41%;
-    left: 60%;
-  }
+
 
 .botones-sehh  {
     position: relative;
-    bottom: 96%;
+    top: 60%;
 }
 .botones-sehh button, .sehh20 button{
    height: 60px; 
@@ -688,6 +692,7 @@ video{
     
     height: 130vh;
 }
+
 .sehh20 button{
     margin:auto;
 }
